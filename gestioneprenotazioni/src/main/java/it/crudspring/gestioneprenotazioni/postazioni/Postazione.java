@@ -6,6 +6,7 @@ import it.crudspring.gestioneprenotazioni.edifici.Edificio;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,7 @@ public class Postazione {
   private int maxPax;
 
   // qui devo eseguire il collegamento
+  @ManyToOne
   private Edificio edificio;
 
   // Costruttore
