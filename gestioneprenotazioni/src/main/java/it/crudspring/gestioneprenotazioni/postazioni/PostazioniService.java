@@ -6,8 +6,6 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import it.crudspring.gestioneprenotazioni.edifici.Edificio;
-
 @Service
 public class PostazioniService {
 
@@ -49,8 +47,10 @@ public class PostazioniService {
     postazioniRepo.delete(found);
   }
 
-  // cerca una postazione per tipo e città
-  public List<Postazione> findByTypeAndCity() {
-
-  }
+  // METODO NON FUNZIONANTE, DEVO CAPIRE COME IMPLEMENTARLO
+  // cerca una lista di postazioni per tipo e città
+  // public List<Postazione> findByTypeAndCity(String city, PostazioneType
+  // postazioneType) {
+  // return postazioniRepo.findByTypeAndCityRepo(city, postazioneType);
+  // }
 }
